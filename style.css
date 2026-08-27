@@ -174,22 +174,31 @@ a:hover {
   font-weight: 700;
 }
 
-.sub-title {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  font-size: 17px;
-  font-weight: 600;
-  margin: 32px 0 12px;
-  color: var(--text);
+.awards-label {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 34px 0 14px;
 }
 
-.sub-title::before {
-  content: "";
-  width: 14px;
-  height: 1px;
-  background: var(--accent);
-  align-self: center;
+.award-row {
+  display: flex;
+  gap: 28px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.award-row:last-of-type {
+  border-bottom: none;
+}
+
+.award-year {
+  flex: 0 0 70px;
+  color: var(--muted);
+  font-size: 15px;
 }
 
 .bio {
@@ -241,35 +250,28 @@ a:hover {
   margin-bottom: 12px;
 }
 
-.entry {
-  padding: 16px 0;
+.line-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding: 13px 0;
   border-bottom: 1px solid var(--border);
   font-size: 16px;
 }
 
-.entry:last-of-type {
+.line-row:last-of-type {
   border-bottom: none;
 }
 
-.entry-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 4px;
+.line-role {
+  color: var(--muted);
 }
 
-.entry ul {
-  margin: 10px 0 0;
-  padding-left: 18px;
-}
-
-.entry ul li {
-  margin-bottom: 4px;
-}
-
-.entry p {
-  margin: 8px 0 0;
-  color: var(--text);
+.line-year {
+  color: var(--muted);
+  font-size: 15px;
+  white-space: nowrap;
 }
 
 .framing {
