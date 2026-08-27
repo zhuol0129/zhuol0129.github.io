@@ -1,7 +1,9 @@
 :root {
   --sidebar-width: 280px;
   --font-family: 'Times New Roman', Times, Georgia, serif;
+  --font-family-display: 'Playfair Display', 'Times New Roman', Times, serif;
   --accent: #2A3B8F;
+  --accent-soft: #EEF0F9;
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --bg: #ffffff;
@@ -62,8 +64,10 @@ a:hover {
 }
 
 .name {
-  font-size: 22px;
+  font-family: var(--font-family-display);
+  font-size: 27px;
   font-weight: 700;
+  letter-spacing: -0.01em;
   margin: 0 0 8px;
 }
 
@@ -76,8 +80,9 @@ a:hover {
 
 .contact-list {
   list-style: none;
-  padding: 0;
+  padding: 20px 0 0;
   margin: 0;
+  border-top: 1px solid var(--border);
 }
 
 .contact-list li {
@@ -89,10 +94,11 @@ a:hover {
 }
 
 .contact-list .icon {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
-  color: var(--muted);
+  color: var(--accent);
+  opacity: 0.75;
 }
 
 .contact-list a {
@@ -129,10 +135,13 @@ a:hover {
   font-size: 14px;
   font-weight: 500;
   color: var(--muted);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
 .anchor-nav a:hover {
   color: var(--accent);
+  border-bottom-color: var(--accent);
   text-decoration: none;
 }
 
@@ -149,18 +158,39 @@ a:hover {
 }
 
 .section-title {
-  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--font-family-display);
+  font-size: 23px;
   font-weight: 700;
-  margin: 0 0 20px;
-  padding-bottom: 10px;
+  margin: 0 0 22px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
 }
 
+.section-title::before {
+  content: "—";
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .sub-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   font-size: 15px;
   font-weight: 600;
   margin: 32px 0 12px;
   color: var(--text);
+}
+
+.sub-title::before {
+  content: "";
+  width: 14px;
+  height: 1px;
+  background: var(--accent);
+  align-self: center;
 }
 
 .bio {
@@ -245,7 +275,8 @@ a:hover {
 
 .entry.featured {
   background: var(--bg-soft);
-  border-radius: 8px;
+  border-left: 2px solid var(--accent);
+  border-radius: 0 8px 8px 0;
   padding: 16px 20px;
   border-bottom: none;
   margin-bottom: 12px;
@@ -276,10 +307,10 @@ a:hover {
 .tag {
   font-size: 12.5px;
   padding: 5px 12px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  color: var(--text);
-  background: var(--bg-soft);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .hobby-grid {
@@ -292,6 +323,11 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 20px;
+  transition: border-color 0.15s ease;
+}
+
+.hobby-tile:hover {
+  border-color: var(--accent);
 }
 
 .hobby-tile h4 {
@@ -306,7 +342,14 @@ a:hover {
 }
 
 .hobby-icon {
-  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  font-size: 19px;
 }
 
 .hobby-featured {
