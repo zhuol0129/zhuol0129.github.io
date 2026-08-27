@@ -1,5 +1,6 @@
 :root {
   --sidebar-width: 280px;
+  --font-family: 'Times New Roman', Times, Georgia, serif;
   --accent: #2A3B8F;
   --text: #1a1a1a;
   --muted: #6b6b6b;
@@ -17,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-family);
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
