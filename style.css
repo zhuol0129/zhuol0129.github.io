@@ -272,13 +272,6 @@ a:hover {
   color: var(--text);
 }
 
-.edu-note {
-  padding: 12px 0 0;
-  font-size: 15.5px;
-  color: var(--text);
-  line-height: 1.5;
-}
-
 .framing {
   font-size: 16px;
   color: var(--muted);
