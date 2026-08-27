@@ -126,7 +126,9 @@ a:hover {
   padding: 12px 0;
   margin-bottom: 32px;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  column-gap: 20px;
   border-bottom: 1px solid var(--border);
   z-index: 10;
 }
@@ -273,13 +275,11 @@ a:hover {
   color: var(--text);
 }
 
-.entry.featured {
-  background: var(--bg-soft);
-  border-left: 2px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 16px 20px;
-  border-bottom: none;
-  margin-bottom: 12px;
+.edu-note {
+  padding: 12px 0 0;
+  font-size: 13.5px;
+  color: var(--text);
+  line-height: 1.5;
 }
 
 .framing {
@@ -313,48 +313,19 @@ a:hover {
   background: var(--accent-soft);
 }
 
-.hobby-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.hobby-tile {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-  transition: border-color 0.15s ease;
-}
-
-.hobby-tile:hover {
-  border-color: var(--accent);
-}
-
-.hobby-tile h4 {
-  margin: 8px 0 6px;
+.one-liner {
+  margin: 0;
   font-size: 15px;
 }
 
-.hobby-tile p {
+.fun-facts-list {
   margin: 0;
-  font-size: 13.5px;
-  color: var(--muted);
+  padding-left: 20px;
+  font-size: 14px;
 }
 
-.hobby-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  font-size: 19px;
-}
-
-.hobby-featured {
-  grid-column: 1 / -1;
-  background: var(--bg-soft);
+.fun-facts-list li {
+  margin-bottom: 8px;
 }
 
 .footer {
@@ -385,11 +356,5 @@ a:hover {
   .footer {
     margin-left: 0;
     padding: 24px 24px 40px;
-  }
-  .hobby-grid {
-    grid-template-columns: 1fr;
-  }
-  .hobby-featured {
-    grid-column: auto;
   }
 }
