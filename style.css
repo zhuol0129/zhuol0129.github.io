@@ -182,24 +182,6 @@ a:hover {
   margin: 34px 0 14px;
 }
 
-.award-row {
-  display: flex;
-  gap: 28px;
-  padding: 13px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.award-row:last-of-type {
-  border-bottom: none;
-}
-
-.award-year {
-  flex: 0 0 70px;
-  color: var(--muted);
-  font-size: 15px;
-}
 
 .bio {
   font-size: 18px;
@@ -300,11 +282,6 @@ a:hover {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.6;
-}
-
-.one-liner {
-  margin: 0;
-  font-size: 17px;
 }
 
 .fun-facts-list {
