@@ -1,0 +1,146 @@
+cv:
+  name: Zhuo (Zoe) Li
+  label: PhD Student in Psychology (Cognitive Neuroscience)
+  email: zhuoli@utexas.edu
+  location: Austin, TX
+  image: ""
+  summary: >
+    PhD student studying human memory and cognition, combining behavioral, neuroimaging,
+    and statistical methods to understand how the brain supports memory across cultures and aging.
+
+  social_networks:
+    - network: LinkedIn
+      username: zoeliumich
+
+  sections:
+    Education:
+      - institution: University of Texas at Austin
+        location: Austin, TX
+        area: Psychology (Cognitive Neuroscience)
+        studyType: PhD
+        start_date: 2025
+        end_date: present
+        highlights:
+          - "Advisor: Dr. Audrey Duarte, Memory and Aging Lab"
+
+      - institution: University of Michigan, Ann Arbor
+        location: Ann Arbor, MI
+        area: Economics & Biopsychology, Cognition, and Neuroscience (Honors)
+        studyType: BS
+        start_date: 2022
+        end_date: 2025
+        highlights:
+          - "Minor in Statistics"
+          - "Advisor: Dr. Thad Polk"
+          - "Honors thesis: GABA Levels, Neural Distinctiveness, and Memory Performance in Older Adults"
+
+    Awards:
+      - title: James B. Angell Scholar
+        date: 2024
+        awarder: University of Michigan
+        summary: Awarded for academic excellence.
+
+      - title: University Honors
+        date: 2022-2025
+        awarder: University of Michigan
+
+    Research Experience:
+      - company: Memory and Aging Lab, University of Texas at Austin
+        position: Graduate Research Assistant
+        location: Austin, TX
+        start_date: 2025
+        end_date: present
+        highlights:
+          - Studying cultural differences in how the brain processes object-context relationships in episodic memory.
+          - Built Python preprocessing pipelines for behavioral data across 200+ participants.
+          - Applied independent component and time-frequency analyses to EEG data in MATLAB.
+
+      - company: Computational and Cognitive Neuroscience Lab, University of Michigan
+        position: Undergraduate Research Assistant
+        location: Ann Arbor, MI
+        start_date: 2023
+        end_date: 2025
+        highlights:
+          - "MiND Study: GABA levels, neural distinctiveness, and memory performance in older adults."
+          - Built a data pipeline integrating MATLAB, R, and Bash for neuroimaging and behavioral data.
+          - Modeled 50+ variables to identify neural predictors of memory.
+          - Trained and supervised 4 junior research assistants.
+
+      - company: Culture and Cognition Lab, University of Michigan
+        position: Undergraduate Research Assistant
+        location: Ann Arbor, MI
+        start_date: 2024
+        end_date: 2024
+
+      - company: School of Information, University of Michigan
+        position: Undergraduate Research Assistant
+        location: Ann Arbor, MI
+        start_date: 2022
+        end_date: 2023
+        highlights:
+          - "Teen Social Media Use & Wellbeing: coded and cleaned data from 119 participants across 30 days."
+          - Designed a mixed-methods study combining quantitative text analysis with qualitative interviews.
+
+    Industry Experience:
+      - company: Family Business Audiocast
+        position: Content and Operations Intern
+        location: Remote
+        start_date: 2024
+        end_date: 2024
+        highlights:
+          - Directed LinkedIn marketing content, growing analytics engagement by 40%.
+          - Coordinated with 30+ global family office leaders on podcast scripts and event planning.
+
+      - company: Deloitte
+        position: Management Consulting Intern
+        location: Beijing, China
+        start_date: 2023
+        end_date: 2023
+        highlights:
+          - Built a Python client-segmentation algorithm for a major bank's data across 39 branches.
+          - Identified 100+ key supply chain clients through SQL-based data mining.
+          - Benchmarked mobile-app campaign performance, improving customer targeting by 10%.
+
+    Leadership and Service:
+      - company: Drive a Senior, Austin
+        position: Volunteer
+        location: Austin, TX
+        start_date: 2025
+        end_date: present
+        summary: Transportation and companionship for local seniors living independently.
+
+      - company: NAMI
+        position: Hospital Visitation Volunteer
+        start_date: 2025
+        end_date: 2025
+        summary: Visit in-patient psychiatric facilities to offer patients and families conversation and community resources.
+
+      - company: LSA Honors Program, University of Michigan
+        position: Student Ambassador
+        location: Ann Arbor, MI
+        start_date: 2024
+        end_date: 2025
+
+      - company: International Center, University of Michigan
+        position: Peer Advisor
+        location: Ann Arbor, MI
+        start_date: 2024
+        end_date: 2024
+        summary: Presented orientation sessions to 400+ incoming international students.
+
+      - company: Chinese Psychology Student Association, University of Michigan
+        position: Event Planner
+        location: Ann Arbor, MI
+        start_date: 2022
+        end_date: 2024
+        summary: Organized events for 230+ participants.
+
+    Skills:
+      - label: Programming
+        details: Python (pandas, NumPy, scikit-learn, matplotlib), R (tidyverse, ggplot2), MATLAB, SQL, Bash, Git, LaTeX
+      - label: Statistics
+        details: ANOVA, regression, factor analysis, clustering, decision trees, SVM, naive Bayes
+      - label: Neuroscience methods
+        details: EEG (EEGLAB, MNE), fMRI (FreeSurfer, FSL, SPM), MRS (Gannet, Osprey), NIH Toolbox
+      - label: Languages
+        details: Mandarin (native), English (professional)
