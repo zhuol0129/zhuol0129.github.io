@@ -103,6 +103,12 @@ jobs:
         run: |
           if [ -f jekyll-build.log ]; then
             {
+              echo '## Jekyll build failure'
+              echo '```text'
+              tail -n 120 jekyll-build.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            {
               head -n 15 jekyll-build.log
               grep -Ei "error|exception|liquid|undefined|no such file|not found" jekyll-build.log || true
               tail -n 15 jekyll-build.log
