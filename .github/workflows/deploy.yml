@@ -102,7 +102,7 @@ jobs:
         if: failure()
         run: |
           if [ -f jekyll-build.log ]; then
-            encoded_log=$(tail -n 120 jekyll-build.log | base64 -w 0)
+            encoded_log=$(tail -n 160 jekyll-build.log | gzip -9 | base64 -w 0)
             echo "::error file=.github/workflows/deploy.yml,title=Encoded Jekyll log::$encoded_log"
             {
               echo '## Jekyll build failure'
