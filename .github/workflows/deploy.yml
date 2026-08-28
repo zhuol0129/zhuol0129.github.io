@@ -102,7 +102,11 @@ jobs:
         if: failure()
         run: |
           if [ -f jekyll-build.log ]; then
-            tail -n 40 jekyll-build.log | while IFS= read -r line; do
+            {
+              head -n 15 jekyll-build.log
+              grep -Ei "error|exception|liquid|undefined|no such file|not found" jekyll-build.log || true
+              tail -n 15 jekyll-build.log
+            } | awk '!seen[$0]++' | head -n 45 | while IFS= read -r line; do
               echo "::error file=.github/workflows/deploy.yml::$line"
             done
           fi
