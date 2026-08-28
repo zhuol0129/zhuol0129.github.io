@@ -93,10 +93,19 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
+          set -o pipefail
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          bundle exec jekyll build 2>&1 | tee jekyll-build.log
+      - name: Report build failure details
+        if: failure()
+        run: |
+          if [ -f jekyll-build.log ]; then
+            tail -n 40 jekyll-build.log | while IFS= read -r line; do
+              echo "::error file=.github/workflows/deploy.yml::$line"
+            done
+          fi
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
