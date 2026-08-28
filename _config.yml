@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Zoe (Zhuo) Li  # short brand shown in the navbar
+title: Zhuo (Zoe) Li  # short brand shown in the navbar
 first_name: Zhuo
 middle_name: 
 last_name: Li
 contact_note: >
   Email is the best way to reach me.
 description: >
-  Zoe (Zhuo) Li — PhD student in Psychology (Cognitive Neuroscience) at the University of Texas at Austin,
+  Zhuo (Zoe) Li — PhD student in Psychology (Cognitive Neuroscience) at the University of Texas at Austin,
   studying memory, aging, and culture.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the
