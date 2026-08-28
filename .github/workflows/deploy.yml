@@ -93,31 +93,10 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
-          set -o pipefail
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build 2>&1 | tee jekyll-build.log
-      - name: Report build failure details
-        if: failure()
-        run: |
-          if [ -f jekyll-build.log ]; then
-            encoded_log=$(tail -n 160 jekyll-build.log | gzip -9 | base64 -w 0)
-            echo "::error file=.github/workflows/deploy.yml,title=Encoded Jekyll log::$encoded_log"
-            {
-              echo '## Jekyll build failure'
-              echo '```text'
-              tail -n 120 jekyll-build.log
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
-            {
-              head -n 15 jekyll-build.log
-              grep -Ei "error|exception|liquid|undefined|no such file|not found" jekyll-build.log || true
-              tail -n 15 jekyll-build.log
-            } | awk '!seen[$0]++' | head -n 45 | while IFS= read -r line; do
-              echo "::error file=.github/workflows/deploy.yml::$line"
-            done
-          fi
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
