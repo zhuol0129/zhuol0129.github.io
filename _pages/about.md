@@ -35,11 +35,11 @@ profile:
       <div><a href="https://www.linkedin.com/in/zoeliumich/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></div>
     </div>
 
-selected_papers: true
+selected_papers: false
 social: false
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
@@ -74,6 +74,24 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
   </div>
   <div class="education-entry-institution">University of Michigan · Ann Arbor, Michigan, USA</div>
 </div>
+
+## News
+
+<div class="news table-responsive">
+  <table class="table table-sm table-borderless">
+    {% assign recent_news = site.news | sort: 'date' | reverse %}
+    {% for item in recent_news limit: 5 %}
+    <tr>
+      <th scope="row" style="width: 20%; white-space: nowrap;">{{ item.date | date: '%B %Y' }}</th>
+      <td>{{ item.content | remove: '<p>' | remove: '</p>' }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+## Presentations & Publications
+
+{% include selected_papers.liquid %}
 
 ## Hobbies
 
