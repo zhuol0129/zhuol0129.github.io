@@ -9,6 +9,15 @@ profile:
   image_circular: false
   more_info: |
     <style>
+      @media (min-width: 992px) {
+        .post > article { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 48px; align-items: start; }
+        .post > article > .clearfix { grid-column: 1; grid-row: 1; min-width: 0; }
+        .post > article > .profile { grid-column: 2; grid-row: 1; float: none; width: 100%; margin: 0; position: sticky; top: 80px; max-height: calc(100dvh - 130px); overflow-y: auto; }
+        .post > article > .profile img { width: auto; max-width: 100%; max-height: max(160px, calc(100dvh - 360px)); height: auto; }
+      }
+      @media (max-width: 991px) {
+        .post > article > .profile { float: none; width: 100%; max-width: 330px; margin: 0 0 2rem; }
+      }
       .profile .more-info a { color: inherit; text-decoration: none; text-underline-offset: 3px; }
       .profile .more-info a:not([href^="mailto:"]):hover,
       .profile .more-info a:not([href^="mailto:"]):focus-visible { text-decoration: underline; }
