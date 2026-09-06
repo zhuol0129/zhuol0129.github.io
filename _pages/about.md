@@ -6,7 +6,7 @@ subtitle: PhD Student in Psychology (Cognitive Neuroscience), University of Texa
 
 profile:
   align: right
-  image: Zhuo (Zoe) LI_headshot.JPEG
+  image: zoe-li-headshot.jpeg
   image_circular: false
   more_info: >
     <p>PhD Student</p>
