@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: about
 title: About
 permalink: /
 subtitle: PhD Student in Psychology (Cognitive Neuroscience), University of Texas at Austin
