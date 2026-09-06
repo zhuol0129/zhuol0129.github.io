@@ -2,13 +2,17 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student in Psychology (Cognitive Neuroscience), University of Texas at Austin
 
 profile:
   align: right
   image: zoe-li-headshot.jpeg
   image_circular: false
   more_info: |
+    <style>
+      .profile .more-info a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+      .post .clearfix a { color: #496b80; text-decoration: underline; text-underline-offset: 3px; }
+      html[data-theme="dark"] .post .clearfix a { color: #a0bdce; }
+    </style>
     <div style="font-family: Roboto, Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 1.5;">
       <div><strong>PhD Student</strong></div>
       <div>Psychology (Cognitive Neuroscience)</div>
