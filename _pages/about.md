@@ -10,6 +10,12 @@ profile:
   more_info: |
     <style>
       body > .container { max-width: 1200px; }
+      .post > .post-header .post-title { font-size: 2.75rem; line-height: 1.15; }
+      .post > article > .clearfix > h2 { font-size: 1.5625rem; font-weight: 400; line-height: 1.3; margin-top: 3rem; margin-bottom: 1.25rem; }
+      @media (max-width: 600px) {
+        .post > .post-header .post-title { font-size: 2.25rem; }
+        .post > article > .clearfix > h2 { font-size: 1.375rem; margin-top: 2.5rem; }
+      }
       .hobbies-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 1.5rem 0 2rem; }
       .hobby-label { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.65rem; font-size: 0.95rem; }
       .hobby-percent { font-size: 0.85rem; font-variant-numeric: tabular-nums; }
@@ -36,8 +42,8 @@ profile:
       .post .clearfix a,
       .post .clearfix a:hover,
       .post .clearfix a:focus-visible { color: var(--global-theme-color); text-decoration: none; }
-      .profile .more-info .profile-links a { width: 38px; height: 38px; border: 1px solid currentColor; border-radius: 7px; font-size: 1.1rem; }
-      .profile-links .cv-monogram { font-family: Roboto, Arial, sans-serif; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.02em; }
+      .profile .more-info .profile-links a { border: 0; background: transparent; border-radius: 0; }
+      .profile-links .cv-monogram { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; font-style: italic; letter-spacing: -0.08em; }
       .post .publications ol.bibliography { padding-left: 0; margin-left: 0; }
       .post .publications ol.bibliography > li > .row { display: block; margin-left: 0; margin-right: 0; }
       .post .publications ol.bibliography .abbr { display: none; }
