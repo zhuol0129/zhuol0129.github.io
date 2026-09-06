@@ -28,15 +28,18 @@ profile:
         .post > article > .profile { float: none; width: 100%; max-width: 330px; margin: 0 0 2rem; }
       }
       .profile .more-info a { color: inherit; text-decoration: none; text-underline-offset: 3px; }
-      .profile .more-info a:not([href^="mailto:"]):hover,
-      .profile .more-info a:not([href^="mailto:"]):focus-visible { text-decoration: underline; }
+      .profile-links { display: flex; gap: 0.75rem; margin-top: 0.75rem; }
+      .profile .more-info .profile-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; font-size: 1.8rem; text-decoration: none; transition: transform 160ms ease; }
+      .profile .more-info .profile-links a:hover,
+      .profile .more-info .profile-links a:focus-visible { transform: scale(1.2); text-decoration: none; }
+      @media (prefers-reduced-motion: reduce) { .profile .more-info .profile-links a { transition: none; } }
       .post .clearfix a,
       .post .clearfix a:hover,
       .post .clearfix a:focus-visible { color: #496b80; text-decoration: none; }
       html[data-theme="dark"] .post .clearfix a { color: #a0bdce; }
       .education-entry { margin-bottom: 1.5rem; }
       .education-entry-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
-      .education-entry-header h3 { font-size: 1.15rem; font-weight: 700; margin: 0; }
+      .education-entry-header h3 { font-size: 1rem; font-weight: bolder; margin: 0; }
       .education-entry-date { font-size: 0.9rem; white-space: nowrap; }
       .education-entry-institution { margin-top: 0.25rem; }
     </style>
@@ -48,9 +51,10 @@ profile:
       <div style="margin-top: 1rem;">
         <a href="mailto:zhuoli@utexas.edu"><i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i> zhuoli@utexas.edu</a>
       </div>
-      <div style="margin-top: 0.75rem;">Links</div>
-      <div><a href="/assets/pdf/zhuo_li_cv.pdf"><i class="fa-solid fa-file-pdf fa-fw" aria-hidden="true"></i> CV</a></div>
-      <div><a href="https://www.linkedin.com/in/zoeliumich/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></div>
+      <div class="profile-links">
+        <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="CV" title="CV"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      </div>
     </div>
 
 selected_papers: false
