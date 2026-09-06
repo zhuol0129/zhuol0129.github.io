@@ -35,8 +35,13 @@ profile:
       @media (prefers-reduced-motion: reduce) { .profile .more-info .profile-links a { transition: none; } }
       .post .clearfix a,
       .post .clearfix a:hover,
-      .post .clearfix a:focus-visible { color: #496b80; text-decoration: none; }
-      html[data-theme="dark"] .post .clearfix a { color: #a0bdce; }
+      .post .clearfix a:focus-visible { color: var(--global-theme-color); text-decoration: none; }
+      .profile .more-info .profile-links a { width: 38px; height: 38px; border: 1px solid currentColor; border-radius: 7px; font-size: 1.1rem; }
+      .profile-links .cv-monogram { font-family: Roboto, Arial, sans-serif; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.02em; }
+      .post .publications ol.bibliography { padding-left: 0; margin-left: 0; }
+      .post .publications ol.bibliography > li > .row { display: block; margin-left: 0; margin-right: 0; }
+      .post .publications ol.bibliography .abbr { display: none; }
+      .post .publications ol.bibliography > li > .row > [id] { width: 100%; max-width: 100%; flex: none; margin-left: 0; padding-left: 0; padding-right: 0; }
       .education-entry { margin-bottom: 1.5rem; }
       .education-entry-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
       .education-entry-header h3 { font-size: 1rem; font-weight: bolder; margin: 0; }
@@ -52,8 +57,8 @@ profile:
         <a href="mailto:zhuoli@utexas.edu"><i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i> zhuoli@utexas.edu</a>
       </div>
       <div class="profile-links">
-        <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="CV" title="CV"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="Download CV" title="Download CV"><span class="cv-monogram" aria-hidden="true">CV</span></a>
+        <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
       </div>
     </div>
 
@@ -114,6 +119,24 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 ## Presentations & Publications
 
 {% include selected_papers.liquid %}
+
+## Awards
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>University Honors</h3>
+    <span class="education-entry-date">2022–2025</span>
+  </div>
+  <div class="education-entry-institution">University of Michigan</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>James B. Angell Scholar</h3>
+    <span class="education-entry-date">2025</span>
+  </div>
+  <div class="education-entry-institution">University of Michigan</div>
+</div>
 
 ## Hobbies
 
