@@ -9,6 +9,7 @@ profile:
   image_circular: false
   more_info: |
     <style>
+      body > .container { max-width: 1200px; }
       @media (min-width: 992px) {
         .post > article { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 48px; align-items: start; }
         .post > article > .clearfix { grid-column: 1; grid-row: 1; min-width: 0; }
