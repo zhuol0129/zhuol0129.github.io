@@ -12,8 +12,15 @@ profile:
       .profile .more-info a { color: inherit; text-decoration: none; text-underline-offset: 3px; }
       .profile .more-info a:not([href^="mailto:"]):hover,
       .profile .more-info a:not([href^="mailto:"]):focus-visible { text-decoration: underline; }
-      .post .clearfix a { color: #496b80; text-decoration: underline; text-underline-offset: 3px; }
+      .post .clearfix a,
+      .post .clearfix a:hover,
+      .post .clearfix a:focus-visible { color: #496b80; text-decoration: none; }
       html[data-theme="dark"] .post .clearfix a { color: #a0bdce; }
+      .education-entry { margin-bottom: 1.5rem; }
+      .education-entry-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
+      .education-entry-header h3 { font-size: 1.15rem; font-weight: 700; margin: 0; }
+      .education-entry-date { font-size: 0.9rem; white-space: nowrap; }
+      .education-entry-institution { margin-top: 0.25rem; }
     </style>
     <div style="font-family: Roboto, Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 1.5;">
       <div><strong>PhD Student</strong></div>
@@ -51,6 +58,22 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 **GABA/Glx and auditory processing in aging.** Explored how GABA and glutamate/glutamine (Glx) concentration in auditory cortex relate to auditory performance in older adults.
 
 ## Education
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>Ph.D. in Psychology (Cognitive Neuroscience)</h3>
+    <span class="education-entry-date">Aug 2025 – May 2030 (expected)</span>
+  </div>
+  <div class="education-entry-institution">University of Texas at Austin · Austin, Texas, USA</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>B.S. in Biopsychology, Cognition, and Neuroscience (Honors) and Economics</h3>
+    <span class="education-entry-date">Aug 2022 – May 2025</span>
+  </div>
+  <div class="education-entry-institution">University of Michigan · Ann Arbor, Michigan, USA</div>
+</div>
 
 ## Hobbies
 
