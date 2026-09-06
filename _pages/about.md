@@ -8,14 +8,22 @@ profile:
   align: right
   image: zoe-li-headshot.jpeg
   image_circular: false
-  more_info: >
-    <p>PhD Student</p>
-    <p>Psychology (Cognitive Neuroscience)</p>
-    <p>University of Texas at Austin</p>
-    <p>Memory and Aging Lab</p>
+  more_info: |
+    <div style="font-family: Roboto, Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 1.5;">
+      <div><strong>PhD Student</strong></div>
+      <div>Psychology (Cognitive Neuroscience)</div>
+      <div>University of Texas at Austin</div>
+      <div>Memory and Aging Lab</div>
+      <div style="margin-top: 1rem;">
+        <a href="mailto:zhuoli@utexas.edu"><i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i> zhuoli@utexas.edu</a>
+      </div>
+      <div style="margin-top: 0.75rem;">Links</div>
+      <div><a href="/assets/pdf/zhuo_li_cv.pdf"><i class="fa-solid fa-file-pdf fa-fw" aria-hidden="true"></i> CV</a></div>
+      <div><a href="https://www.linkedin.com/in/zoeliumich/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></div>
+    </div>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: true
