@@ -10,6 +10,14 @@ profile:
   more_info: |
     <style>
       body > .container { max-width: 1200px; }
+      .hobbies-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 1.5rem 0 2rem; }
+      .hobby-label { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.65rem; font-size: 0.95rem; }
+      .hobby-percent { font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+      .hobby-bar { height: 9px; border-radius: 8px; background: #e4e9ec; overflow: hidden; }
+      .hobby-fill { height: 100%; border-radius: inherit; background: #496b80; }
+      html[data-theme="dark"] .hobby-bar { background: #343e45; }
+      html[data-theme="dark"] .hobby-fill { background: #a0bdce; }
+      @media (max-width: 600px) { .hobbies-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; } }
       @media (min-width: 992px) {
         .post > article { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 48px; align-items: start; }
         .post > article > .clearfix { grid-column: 1; grid-row: 1; min-width: 0; }
@@ -105,4 +113,16 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 
 ## Hobbies
 
-I have played basketball for 18 years, hiked in 10 National Parks, and was once a choir singer.
+<div class="hobbies-grid">
+  {% for hobby in site.data.hobbies %}
+  <div class="hobby-item">
+    <div class="hobby-label">
+      <span><span aria-hidden="true">{{ hobby.icon }}</span> {{ hobby.name }}</span>
+      <span class="hobby-percent">{{ hobby.percent }}%</span>
+    </div>
+    <div class="hobby-bar" role="meter" aria-label="{{ hobby.name }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ hobby.percent }}">
+      <div class="hobby-fill" style="width: {{ hobby.percent }}%;"></div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

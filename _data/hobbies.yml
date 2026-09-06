@@ -1,0 +1,19 @@
+# Displayed left to right, then top to bottom. Keep percent between 0 and 100.
+- name: Basketball
+  percent: 100
+  icon: "🏀"
+- name: Cooking
+  percent: 70
+  icon: "🍳"
+- name: Reading
+  percent: 95
+  icon: "📚"
+- name: Badminton
+  percent: 90
+  icon: "🏸"
+- name: Bouldering
+  percent: 75
+  icon: "🧗"
+- name: Mountain biking
+  percent: 80
+  icon: "🚵"
