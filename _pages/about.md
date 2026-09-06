@@ -9,7 +9,9 @@ profile:
   image_circular: false
   more_info: |
     <style>
-      .profile .more-info a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+      .profile .more-info a { color: inherit; text-decoration: none; text-underline-offset: 3px; }
+      .profile .more-info a:not([href^="mailto:"]):hover,
+      .profile .more-info a:not([href^="mailto:"]):focus-visible { text-decoration: underline; }
       .post .clearfix a { color: #496b80; text-decoration: underline; text-underline-offset: 3px; }
       html[data-theme="dark"] .post .clearfix a { color: #a0bdce; }
     </style>
