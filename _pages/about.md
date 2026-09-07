@@ -105,7 +105,7 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 
 **Cultural differences in episodic memory.** How does the brain encode and retrieve relationships between objects and their backgrounds, especially when they are congruent or incongruent? How do these processes differ across cultures and with how independent or interdependent a person is?
 
-**GABA, neural distinctiveness, and memory in the aging population.** With advancing age, patterns of brain activity elicited by different categories of visual stimuli become less distinct—a phenomenon known as age-related neural dedifferentiation. How does this affect memory? Specifically, do brain activity patterns become less distinct when older adults recall objects versus scenes?
+**GABA, neural distinctiveness, and memory in the aging population.** As people age, patterns of brain activity elicited by different categories of visual stimuli become less distinct—a phenomenon known as age-related neural dedifferentiation. How does this affect memory? Specifically, do brain activity patterns become less distinct when older adults recall objects versus scenes?
 
 ## Education
 
