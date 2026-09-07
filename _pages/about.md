@@ -16,7 +16,7 @@ profile:
         .post > .post-header .post-title { font-size: 2.25rem; }
         .post > article > .clearfix > h2 { font-size: 1.375rem; margin-top: 2.5rem; }
       }
-      .hobbies-grid { display: grid; grid-template-columns: minmax(0, 1fr); width: 35%; gap: 1.5rem; margin: 1.5rem 0 2rem; }
+      .hobbies-grid { display: grid; grid-template-columns: minmax(0, 1fr); width: 20%; gap: 1.5rem; margin: 1.5rem 0 2rem; }
       @media (max-width: 600px) { .hobbies-grid { width: 100%; } }
       .hobby-label { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.65rem; font-size: 0.95rem; }
       .hobby-bar { height: 9px; border-radius: 8px; background: #e4e9ec; overflow: hidden; }
