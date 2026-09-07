@@ -44,6 +44,9 @@ profile:
       .profile .more-info .profile-links a { border: 0; background: transparent; border-radius: 0; }
       .profile-links .cv-monogram { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; font-style: italic; letter-spacing: -0.08em; }
       .post .publications ol.bibliography { padding-left: 0; margin-left: 0; }
+      .post .publications ol.bibliography .author,
+      .post .publications ol.bibliography .author a { color: #777; text-decoration: none; border-bottom: none; }
+      .post .publications ol.bibliography .author > em { color: var(--global-text-color); font-weight: 700; font-style: normal; text-decoration: none; border-bottom: none; }
       .post .publications ol.bibliography > li > .row { display: block; margin-left: 0; margin-right: 0; }
       .post .publications ol.bibliography .abbr { display: none; }
       .post .publications ol.bibliography > li > .row > [id] { width: 100%; max-width: 100%; flex: none; margin-left: 0; padding-left: 0; padding-right: 0; }
