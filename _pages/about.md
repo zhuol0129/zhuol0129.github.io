@@ -43,6 +43,10 @@ profile:
       .post .clearfix a:focus-visible { color: var(--global-theme-color); text-decoration: none; }
       .profile .more-info .profile-links a { border: 0; background: transparent; border-radius: 0; }
       .profile-links .cv-monogram { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; font-style: italic; letter-spacing: -0.08em; }
+      .profile-links .linkedin-icon { width: 32px; height: 32px; overflow: visible; }
+      .profile-links .linkedin-dot { animation: linkedin-dot-hop 3s ease-in-out infinite; }
+      @keyframes linkedin-dot-hop { 0%, 65%, 85%, 100% { transform: translateY(0); } 75% { transform: translateY(-1.5px); } }
+      @media (prefers-reduced-motion: reduce) { .profile-links .linkedin-dot { animation: none; } }
       .post .publications ol.bibliography { padding-left: 0; margin-left: 0; }
       .post .publications ol.bibliography .author,
       .post .publications ol.bibliography .author a { color: #777; text-decoration: none; border-bottom: none; }
@@ -66,7 +70,13 @@ profile:
       </div>
       <div class="profile-links">
         <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="Download CV" title="Download CV"><span class="cv-monogram" aria-hidden="true">CV</span></a>
-        <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="linkedin-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle class="linkedin-dot" cx="6" cy="6" r="3.1" />
+            <path d="M3 12h6v17H3z" />
+            <path d="M14 12h5v2.2c1.2-1.8 2.9-2.7 5-2.7 4 0 6 2.6 6 7V29h-6V19.7c0-2-.7-3.1-2.2-3.1-1.6 0-2.8 1.2-2.8 3.2V29h-5z" />
+          </svg>
+        </a>
       </div>
     </div>
 
