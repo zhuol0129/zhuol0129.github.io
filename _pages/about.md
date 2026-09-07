@@ -42,7 +42,7 @@ profile:
       .post .clearfix a:hover,
       .post .clearfix a:focus-visible { color: var(--global-theme-color); text-decoration: none; }
       .profile .more-info .profile-links a { border: 0; background: transparent; border-radius: 0; }
-      .profile-links .cv-monogram { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; font-style: italic; letter-spacing: -0.08em; }
+      .profile-links .cv-icon { width: 36px; height: 32px; overflow: visible; }
       .profile-links .linkedin-icon { width: 32px; height: 32px; overflow: visible; }
       .profile-links .linkedin-dot { animation: linkedin-dot-hop 2.5s ease-in-out infinite; }
       .profile-links .linkedin-stem { transform-box: view-box; transform-origin: 6px 29px; animation: linkedin-stem-spring 2.5s ease-in-out infinite; }
@@ -71,7 +71,12 @@ profile:
         <a href="mailto:zhuoli@utexas.edu"><i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i> zhuoli@utexas.edu</a>
       </div>
       <div class="profile-links">
-        <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="Download CV" title="Download CV"><span class="cv-monogram" aria-hidden="true">CV</span></a>
+        <a href="/assets/pdf/zhuo_li_cv.pdf" aria-label="Download CV" title="Download CV">
+          <svg class="cv-icon" viewBox="0 0 36 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M16 9.5C14.5 7.8 12.5 7 10 7 4.7 7 2 11.2 2 17s2.7 10 8 10c2.5 0 4.5-.8 6-2.5l-3-3c-.8.9-1.7 1.3-3 1.3-2.6 0-3.7-2.5-3.7-5.8s1.1-5.8 3.7-5.8c1.3 0 2.2.4 3 1.3z" />
+            <path d="M18 7h4.5l3.5 13.5L29.5 7H34l-6 20h-4z" />
+          </svg>
+        </a>
         <a href="https://www.linkedin.com/in/zoeliumich/" aria-label="LinkedIn" title="LinkedIn">
           <svg class="linkedin-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
             <circle class="linkedin-dot" cx="6" cy="6" r="3.1" />
@@ -100,9 +105,7 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 
 **Cultural differences in episodic memory.** How does the brain encode and retrieve relationships between objects and their backgrounds, especially when they are congruent or incongruent? How do these processes differ across cultures and with how independent or interdependent a person is?
 
-**GABA, neural distinctiveness, and memory in the aging population.** examined how age-related GABA levels relate to neural distinctiveness and memory performance in older adults. Built a MATLAB/R/Bash data pipeline and modeled 50+ variables to identify neural predictors of memory.
-
-**GABA/Glx and auditory processing in aging.** Explored how GABA and glutamate/glutamine (Glx) concentration in auditory cortex relate to auditory performance in older adults.
+**GABA, neural distinctiveness, and memory in the aging population.** As people age, patterns of brain activity can become less distinct when viewing different types of stimuli—a phenomenon known as neural dedifferentiation. How does this affect memory? Specifically, do brain activity patterns become less distinct when older adults recall objects versus scenes?
 
 ## Education
 
