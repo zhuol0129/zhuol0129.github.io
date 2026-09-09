@@ -64,8 +64,8 @@ profile:
       .education-entry-institution { margin-top: 0.25rem; }
       .award-description { margin-top: 0.25rem; font-size: 0.9rem; }
     </style>
-    <div style="font-family: Roboto, Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5;">
-      <div style="font-size: 19px; margin-bottom: 10px;">Zhuo (Zoe) Li</div>
+    <div style="font-family: Roboto, sans-serif; font-size: 15px; font-weight: 300; line-height: 1.5;">
+      <div style="font-size: 22px; margin-bottom: 10px;">Zhuo (Zoe) Li</div>
       <div><strong>PhD Student</strong></div>
       <div>Psychology (Cognitive Neuroscience)</div>
       <div>University of Texas at Austin</div>
