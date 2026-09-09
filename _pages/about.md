@@ -139,9 +139,12 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
   </table>
 </div>
 
+{% comment %}
+Temporarily hidden; entries remain available in the CV.
 ## Presentations & Publications
 
 {% include selected_papers.liquid %}
+{% endcomment %}
 
 ## Awards
 
