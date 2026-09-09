@@ -61,6 +61,7 @@ profile:
       .education-entry-header h3 { font-size: 1rem; font-weight: bolder; margin: 0; }
       .education-entry-date { font-size: 0.9rem; white-space: nowrap; }
       .education-entry-institution { margin-top: 0.25rem; }
+      .award-description { margin-top: 0.25rem; font-size: 0.9rem; }
     </style>
     <div style="font-family: Roboto, Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 1.5;">
       <div><strong>PhD Student</strong></div>
@@ -150,7 +151,8 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
     <h3>Tanner Memorial Award</h3>
     <span class="education-entry-date">2025</span>
   </div>
-  <div class="education-entry-institution">For an innovative, original, and meritorious research project.</div>
+  <div class="education-entry-institution">University of Michigan</div>
+  <div class="award-description">For innovative and original research of merit</div>
 </div>
 
 <div class="education-entry">
@@ -158,7 +160,8 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
     <h3>Harold D. Osterweil Memorial Prize</h3>
     <span class="education-entry-date">2025</span>
   </div>
-  <div class="education-entry-institution">Awarded to a senior in economics with the most outstanding academic record and the greatest social awareness.</div>
+  <div class="education-entry-institution">University of Michigan</div>
+  <div class="award-description">For the most outstanding academic record and greatest social awareness among economics seniors</div>
 </div>
 
 <div class="education-entry">
@@ -167,6 +170,7 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
     <span class="education-entry-date">2022–2025</span>
   </div>
   <div class="education-entry-institution">University of Michigan</div>
+  <div class="award-description">For academic excellence</div>
 </div>
 
 <div class="education-entry">
@@ -175,6 +179,7 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
     <span class="education-entry-date">2025</span>
   </div>
   <div class="education-entry-institution">University of Michigan</div>
+  <div class="award-description">For academic excellence</div>
 </div>
 
 ## Hobbies
