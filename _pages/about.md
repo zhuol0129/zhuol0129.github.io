@@ -150,6 +150,22 @@ Temporarily hidden; entries remain available in the CV.
 
 <div class="education-entry">
   <div class="education-entry-header">
+    <h3>Tanner Memorial Award</h3>
+    <span class="education-entry-date">2025</span>
+  </div>
+  <div class="education-entry-institution">For an innovative, original, and meritorious research project.</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>Harold D. Osterweil Memorial Prize</h3>
+    <span class="education-entry-date">2025</span>
+  </div>
+  <div class="education-entry-institution">Awarded to a senior in economics with the most outstanding academic record and the greatest social awareness.</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
     <h3>University Honors</h3>
     <span class="education-entry-date">2022–2025</span>
   </div>
