@@ -58,7 +58,8 @@ profile:
       .post .publications ol.bibliography > li > .row > [id] { width: 100%; max-width: 100%; flex: none; margin-left: 0; padding-left: 0; padding-right: 0; }
       .education-entry { margin-bottom: 1.5rem; }
       .education-entry-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
-      .education-entry-header h3 { font-size: 1rem; font-weight: bolder; margin: 0; }
+      .education-entry-header h3, .post .news table th { font-size: 1rem; font-weight: 400; }
+      .education-entry-header h3 { margin: 0; }
       .education-entry-date { font-size: 0.9rem; white-space: nowrap; }
       .education-entry-institution { margin-top: 0.25rem; }
       .award-description { margin-top: 0.25rem; font-size: 0.9rem; }
