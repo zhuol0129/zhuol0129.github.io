@@ -142,7 +142,7 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
   </table>
 </div>
 
-## Presentations & Publications
+## Presentations
 
 {% include selected_papers.liquid %}
 
