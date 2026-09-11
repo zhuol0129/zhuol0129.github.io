@@ -162,6 +162,14 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
 
 <div class="education-entry">
   <div class="education-entry-header">
+    <h3>Content and Operations Intern</h3>
+    <span class="education-entry-date">Apr 2024 – Aug 2024</span>
+  </div>
+  <div class="education-entry-institution">Family Business Audiocast · Remote</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
     <h3>Management Consulting Intern</h3>
     <span class="education-entry-date">Jun 2023 – Aug 2023</span>
   </div>
