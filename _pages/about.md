@@ -142,6 +142,32 @@ I study human episodic memory, aging, and cultural differences. Currently, I wor
   </table>
 </div>
 
+## Internships & Services
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>LSA Honors Program Ambassador</h3>
+    <span class="education-entry-date">Nov 2024 – Aug 2025</span>
+  </div>
+  <div class="education-entry-institution">University of Michigan · Ann Arbor, Michigan, USA</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>International Center Orientation Advisor</h3>
+    <span class="education-entry-date">Jul 2024 – Sep 2024</span>
+  </div>
+  <div class="education-entry-institution">University of Michigan · Ann Arbor, Michigan, USA</div>
+</div>
+
+<div class="education-entry">
+  <div class="education-entry-header">
+    <h3>Management Consulting Intern</h3>
+    <span class="education-entry-date">Jun 2023 – Aug 2023</span>
+  </div>
+  <div class="education-entry-institution">Deloitte · Beijing, China</div>
+</div>
+
 ## Presentations
 
 {% include selected_papers.liquid %}
